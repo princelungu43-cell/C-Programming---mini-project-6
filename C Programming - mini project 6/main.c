@@ -7,8 +7,18 @@
 
 #include <stdio.h>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+int main() {
+    int myNum;
+    
+    printf("enter number: ");
+    scanf("%d", &myNum);
+
+    if (myNum % 2 == 0) {
+      printf("%d is even.\n", myNum);
+    } else {
+      printf("%d is odd.\n", myNum);
+    }
+
+   
     return 0;
 }
